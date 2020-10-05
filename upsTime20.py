@@ -9,7 +9,7 @@ import os
 import sys
 import subprocess
 
-butonPin=37
+buttonPin=37
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
