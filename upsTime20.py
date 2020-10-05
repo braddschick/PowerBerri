@@ -14,7 +14,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 schlaf=10
-waitTime=15
+waitTime=1
 while True:
     if (GPIO.input(buttonPin)):
         time.sleep(schlaf)
