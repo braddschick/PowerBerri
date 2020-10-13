@@ -5,7 +5,7 @@ import time
 ## Perfectly functional
 
 numbers = [4, 1, 2, 3]
-buttons = [26, 16, 20, 19]
+buttons = [13, 16, 20, 19]
 
 def callback(chnl):
     print(f"well {numbers[buttons.index(chnl)]} was called")
