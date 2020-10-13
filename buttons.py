@@ -12,7 +12,7 @@ def callback(chnl):
     print(f"well {chnl} was called")
 
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(buttons, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
