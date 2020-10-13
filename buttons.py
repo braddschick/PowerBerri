@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 import time
 
 ## This works and tells me which one called what
+## Perfectly functional
 
 numbers = [4, 1, 2, 3]
 buttons = [26, 16, 20, 19]
