@@ -10,6 +10,12 @@ def callback(chnl):
 
 
 GPIO.setmode(GPIO.BOARD)
+
+GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(19, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(20, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(16, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
 GPIO.add_event_detect(26, GPIO.RISING, callback=callback)
 GPIO.add_event_detect(19, GPIO.RISING, callback=callback)
 GPIO.add_event_detect(20, GPIO.RISING, callback=callback)
