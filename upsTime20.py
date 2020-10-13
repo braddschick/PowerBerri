@@ -21,8 +21,8 @@ while True:
         time.sleep(schlaf)
     else:
         logging.info("Power has been lost and will now start shutdown after the wait time")
-        subprocess.call(f"shutdown -h {waitTime} &", shell=True)
-        time.sleep(2)
-        sys.stdout.flush()
+        # subprocess.call(f"shutdown -h {waitTime} &", shell=True)
+        # time.sleep(2)
+        # sys.stdout.flush()
         exit()
     sys.stdout.flush()
