@@ -4,7 +4,7 @@ import time
 ## This works and tells me which one called what
 ## Perfectly functional
 
-numbers = [4, 1, 2, 3]
+numbers = [1, 4, 3, 2]
 buttons = [13, 16, 20, 19]
 
 def callback(chnl):
@@ -15,7 +15,7 @@ GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(buttons, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 for btn in buttons:
-    GPIO.add_event_detect(btn, GPIO.RISING, callback=callback, bouncetime=1000)
+    GPIO.add_event_detect(btn, GPIO.RISING, callback=callback, bouncetime=3000)
 
 time.sleep(45)
 
